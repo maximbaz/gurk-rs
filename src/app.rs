@@ -956,7 +956,7 @@ impl App {
         };
         let message = self.storage.store_message(channel_id, message);
 
-        if is_added && channel_id != ChannelId::User(self.user_id) {
+        if false && is_added && channel_id != ChannelId::User(self.user_id) {
             // Notification
             let mut notification = format!("reacted {emoji}");
             if let Some(text) = message.message.as_ref() {
